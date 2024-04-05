@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplicativo de Cadastro</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Aplicativo de Cadastro</h1>
+      <form id="userForm">
+        <input type="text" id="name" placeholder="Nome" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <button type="submit">Cadastrar</button>
+      </form>
+
+      <h2>Lista de Usuários</h2>
+      <div class="separate-accordion"></div>
+      <div id="accordion" class="accordion"></div>
+
+      <div id="editModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Editar Dados</h2>
+          <label for="newName">Novo Nome:</label>
+          <input type="text" id="newName" />
+          <label for="newEmail">Novo Email:</label>
+          <input type="email" id="newEmail" />
+          <button id="saveChanges">Salvar Alterações</button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
